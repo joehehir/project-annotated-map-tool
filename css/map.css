@@ -1,0 +1,202 @@
+@font-face{ /* font can be downloaded here: http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip  */
+	font-family:ubuntu-regular;
+	src:url(../../font/ubuntu-font-family-0.83/Ubuntu-R.ttf);
+}
+
+body, input{
+	background-color:#FFFFFF;
+	font-family:ubuntu-regular, Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+
+#content{
+	width:604px;
+	margin:auto;
+}
+
+#canvas-wrap{
+  position:relative;
+	width:600px;
+	height:480px;
+	border:2px solid #CCCCCC;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+
+#map-canvas{
+	background:url(../img/cit-map-med.jpg);
+}
+
+#pop-label{
+	position:absolute;
+	color:#333333;
+	background-color:#FFFFFF;
+	padding:2px 6px;
+	border:2px solid #333333;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	font-size:1em;
+	display:none;
+	cursor:default;
+	pointer-events:none;
+}
+
+#caption-overlay{
+	position:absolute;
+	background:rgba(0,0,0,0.5);
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+}
+
+#caption-box{
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	text-align:center;
+	background:#808080;
+	width:260px;
+	height:140px;
+	border:2px solid #CCCCCC;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+
+.display{
+	display:none;
+}
+
+#caption-input{
+	text-align:center;
+	width:150px;
+	height:32px;
+	background:#FFFFFF;
+	margin-top:20px;
+	display:inline-block;
+	border:2px solid #CCCCCC;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	padding-top:2px;
+}
+
+.btn{
+	color:#333333;
+	padding:2px 6px;
+	margin:1em;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	-webkit-box-shadow:0px 2px 0px #999999;
+	-moz-box-shadow:0px 2px 0px #999999;
+	box-shadow:0px 2px 0px #999999;
+	background:none repeat scroll 0% 0% #CCCCCC;
+	cursor:pointer;
+	-webkit-touch-callout:none; /* iOS Safari */
+	-webkit-user-select:none;   /* Chrome/Safari/Opera */
+	-khtml-user-select:none;    /* Konqueror */
+	-moz-user-select:none;      /* Firefox */
+	-ms-user-select:none;       /* IE/Edge */
+	user-select:none;
+}
+
+.btn:active{
+	color:#FFFFFF;
+}
+
+.ctrl{
+	color:#FFFFFF;
+	padding:2px 6px;
+	margin:0.5em;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	-webkit-box-shadow:0px 2px 0px #404040;
+	-moz-box-shadow:0px 2px 0px #404040;
+	box-shadow:0px 2px 0px #404040;
+	background:none repeat scroll 0% 0% #808080;
+	cursor:pointer;
+	-webkit-touch-callout:none; /* iOS Safari */
+	-webkit-user-select:none;   /* Chrome/Safari/Opera */
+	-khtml-user-select:none;    /* Konqueror */
+	-moz-user-select:none;      /* Firefox */
+	-ms-user-select:none;       /* IE/Edge */
+	user-select:none;
+}
+
+.ctrl:active{
+	color:#333333;
+}
+
+a{
+	text-decoration:none;
+}
+
+table{
+	min-width:604px;
+	color:#333333;
+	background:#E2E2E2;
+	border:2px solid #CCCCCC;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+tr{
+	height:40px;
+}
+
+td{
+	border-top:2px solid #CCCCCC;
+}
+
+th{
+	padding-left:0.5em;
+	font-weight:normal;
+}
+
+td:first-child{
+	width:130px;
+}
+
+td:nth-child(2){
+	padding-left:0.5em;
+}
+
+td:last-child{
+	width:130px;
+}
+
+.caption-edit{
+	text-align:left;
+	width:150px;
+	height:26px;
+	margin-left:0.5em;
+	margin-right:0.5em;
+	background:#FFFFFF;
+	border:2px solid #CCCCCC;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	padding-top:2px;
+}
+
+.disable{
+	pointer-events:none;
+	cursor:default;
+	opacity:0.5;
+}
+
+.no-event{
+	pointer-events:none;
+	cursor:default;
+}
